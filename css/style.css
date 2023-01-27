@@ -187,7 +187,8 @@ body {
   perspective: 1500rem;
   -webkit-perspective: 1500rem;
   position: relative;
-  height: 50rem; }
+  height: 50rem;
+  /* FRONT SIDE STYLING */ }
   .card__side {
     background-color: #223fc2;
     height: 50rem;
@@ -215,6 +216,12 @@ body {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
     transform: rotateY(0deg); }
+  .card__picture-1 {
+    background-image: url(./../../img/nat-5.jpg); }
+  .card__picture-2 {
+    background-image: url(./../../img/nat-6.jpg); }
+  .card__picture-3 {
+    background-image: url(./../../img/nat-7.jpg); }
 
 .composition {
   position: relative; }
