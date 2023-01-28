@@ -111,6 +111,12 @@ body {
 .u-margin-bottom-sm {
   margin-bottom: 1.5rem; }
 
+.u-margin-top-lg {
+  margin-top: 8rem; }
+
+.u-margin-top-xl {
+  margin-top: 10rem; }
+
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -187,10 +193,11 @@ body {
   perspective: 1500rem;
   -webkit-perspective: 1500rem;
   position: relative;
-  height: 50rem;
-  /* FRONT SIDE STYLING */ }
+  height: 52rem;
+  /* FRONT SIDE STYLING */
+  /* BACK SIDE STYLING */ }
   .card__side {
-    height: 50rem;
+    height: 52rem;
     transition: all 0.75s ease;
     text-transform: uppercase;
     position: absolute;
@@ -220,7 +227,9 @@ body {
     height: 23rem;
     background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
     .card__picture-1 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(./../../img/nat-5.jpg); }
     .card__picture-2 {
@@ -257,6 +266,22 @@ body {
       padding: 1rem; }
       .card__details ul li:not(:last-child) {
         border-bottom: 1px solid #eee; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center; }
+  .card__price-box {
+    margin-bottom: 8rem;
+    color: #fff; }
+  .card__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase; }
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 100; }
 
 .composition {
   position: relative; }
@@ -368,5 +393,5 @@ body {
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 25rem 0 50rem 0;
+  padding: 25rem 0 15rem 0;
   margin-top: -10rem; }
